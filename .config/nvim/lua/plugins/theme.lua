@@ -1,6 +1,12 @@
-require("catppuccin").setup({
-		flavour = "latte",
-		transparent_background = true,
-})
-
-vim.cmd.colorscheme "catppuccin"
+return {
+  "catppuccin/nvim",
+  lazy = false,
+  priority = 1000,
+  name = "catppuccin",
+  opts = {
+   flavour = "latte",
+  },
+  config = function()
+    vim.cmd.colorscheme "catppuccin-latte"
+  end,
+}
