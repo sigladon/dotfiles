@@ -29,6 +29,8 @@ export PATH="$PATH:$HOME/Android/Sdk/emulator"
 export PATH="$PATH:$HOME/Android/Sdk/tools"
 export PATH="$PATH:$HOME/Android/Sdk/tools/bin"
 export PATH="$PATH:$HOME/Android/Sdk/platform-tools"
+export PATH="$PATH:$HOME/.cargo/bin"
+export EDITOR=nvim
 
 
 # pnpm
@@ -42,3 +44,18 @@ esac
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/home/sigladon/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/home/sigladon/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
