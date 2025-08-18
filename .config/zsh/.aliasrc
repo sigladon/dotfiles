@@ -1,0 +1,31 @@
+# GENERAL ALIASES
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias GO='Hyprland'
+alias pn='pnpm'
+alias mkdir='mkdir -pv'
+alias rm='rm -v'
+alias cp='cp -v'
+
+# GIT ALIASES
+
+alias g.st='git status'
+alias g.ad='git add'
+alias g.aa='git add --all'
+alias g.br='git branch '
+alias g.sw='git switch'
+alias g.sW='git switch -c'
+alias g.cm='git commit -m'
+alias g.cM='git commit --amend -m'
+alias g.sl='git log --pretty=format:"%h %ad | %s%d [%an]" --graph'
+alias g.co='git checkout'
+
+# DIRECTORIES HASHES
+hash -d dotfiles=$HOME/.dotfiles
+hash -d ecogara=$HOME/Projects/Ecogara
+hash -d dviaggio=$HOME/Projects/Dviaggio
+hash -d pers_proj=$HOME/Projects/Personal
+
+hash -d downloads=$HOME/Downloads
+hash -d images=$HOME/Images
+hash -d personal=$HOME/Personal
